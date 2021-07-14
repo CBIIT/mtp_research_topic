@@ -8,7 +8,7 @@ function App() {
 
 const [data, setData] = useState([]);
 
-const path = "http://localhost:3669/plot?spec=setosa"
+const path = "http://localhost:8000/plot?spec=setosa"
 //virginica
 
  useEffect(() => {
