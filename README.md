@@ -6,28 +6,29 @@ main.R is the entry point of the program
 
 
 # React APP
-requirement
-	node.js  - v14.17.0
-	npm -6.14.13
-installation :https://nodejs.org/en/download/ 
+requirement<br />
+	node.js  - v14.17.0<br />
+	npm -6.14.13<br />
+installation :https://nodejs.org/en/download/ <br />
 
 
 Execute React app:
-
+<br />
 in command line, cd react app root directory. 
-
-''' text
+<br />
+```
 cd react-app
-''' 
+```
+<br />
 install required the libraries 
-
-''' text
+<br />
+```
 npm install
-''' 
-
+```
+<br />
 run react app
-
-''' text
+<br />
+```
 npm start
-''' 
-	
+```
+<br />	
