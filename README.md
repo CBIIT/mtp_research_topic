@@ -16,19 +16,20 @@ Execute React app:
 <br />
 in command line, cd react app root directory. 
 <br />
-```
+```text
 cd react-app
 ```
-<br />
+
 install required the libraries 
 <br />
-```
+
+```text
 npm install
 ```
-<br />
+
 run react app
 <br />
-```
+```text
 npm start
 ```
-<br />	
+
