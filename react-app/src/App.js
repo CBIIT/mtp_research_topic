@@ -6,18 +6,17 @@ import axios from 'axios';
 
 function App() {
 
-const [data, setData] = useState([]);
+const [data, setData] = useState("");
 
-const path = "http://localhost:8000/plot?spec=setosa"
+const path = "http://localhost:8000/plotly"
 //virginica
 
  useEffect(() => {
     axios.get(path,{
-    responseType: 'arraybuffer'
   }).then(function (response) {
         // handle success
-        console.log(response);
-        setData(Buffer.from(response.data).toString('base64'));
+        console.log(response.data)
+        setData(response.data);
       })
       .catch(function (error) {
         // handle error
@@ -36,12 +35,11 @@ const path = "http://localhost:8000/plot?spec=setosa"
         <h2>
           The API responses
         </h2>
-        <p>
-           <img alt="test" src={`data:image/png;base64,${data}`} />
-        </p>
+        <div className="plot">
+          <iframe src="http://localhost:8000/plotly" width="100%" height="100%"></iframe>
+        </div>
       </header>
-      
-    </div>
+     </div>
   );
 }
 
